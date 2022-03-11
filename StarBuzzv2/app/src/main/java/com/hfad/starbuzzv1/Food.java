@@ -7,7 +7,7 @@ public class Food {
 
     public static final Food[] foods ={
             new Food("Hamburger","Texto de hamburguesa", R.drawable.hamburger),
-            new Food("Pizza","Texto pizza", R.drawable.Pizza),
+            new Food("Pizza","Texto pizza", R.drawable.pizza),
             new Food("Tacos", "Texto tacos", R.drawable.tacos)
     };
 
