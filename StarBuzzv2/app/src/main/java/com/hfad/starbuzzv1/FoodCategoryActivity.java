@@ -25,6 +25,7 @@ public class FoodCategoryActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> listFoods, View itemview, int position, long id) {
                 Intent intent = new Intent(FoodCategoryActivity.this, FoodActivity.class);
                 intent.putExtra(FoodActivity.EXTRA_FOOD, (int) id);
+                startActivity(intent);
             }
         };
         listFoods.setOnItemClickListener(itemClickListener);

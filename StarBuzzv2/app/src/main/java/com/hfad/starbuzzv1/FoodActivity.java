@@ -19,13 +19,13 @@ public class FoodActivity extends AppCompatActivity {
         int foodId = (Integer)getIntent().getExtras().get(EXTRA_FOOD);
         Food food = Food.foods[foodId];
 
-        TextView name = (TextView) findViewById(R.id.name);
+        TextView name = (TextView)findViewById(R.id.name);
         name.setText(food.getName());
 
         TextView description = (TextView)findViewById(R.id.description);
         description.setText(food.getDescription());
 
-        ImageView photo = (ImageView) findViewById(R.id.photo);
+        ImageView photo = (ImageView)findViewById(R.id.photo);
         photo.setImageResource(food.getImageResourcesId());
         photo.setContentDescription(food.getName());
     }

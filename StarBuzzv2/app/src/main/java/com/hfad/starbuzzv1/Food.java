@@ -6,9 +6,9 @@ public class Food {
     private int imageResourcesId;
 
     public static final Food[] foods ={
-            new Food("Hamburger","Texto de hamburguesa", R.drawable.hamburger),
-            new Food("Pizza","Texto pizza", R.drawable.pizza),
-            new Food("Tacos", "Texto tacos", R.drawable.tacos)
+            new Food("Hamburger","Doble carne, tocino, queso frito, sukini a la parrilla chorrellana, salsa Jack Daniels, mayonesa, chimichurri, lechuga, tomate y cebolla. Acompañado con papas fritas.", R.drawable.hamburger),
+            new Food("Pizza","Especial: Jamon, salami, pimineto, chorizo, piña, champiñon y salchicha", R.drawable.pizza),
+            new Food("Tacos", "Tacos varios", R.drawable.tacos)
     };
 
     private Food(String name, String description, int imageResourcesId){
@@ -22,11 +22,11 @@ public class Food {
     }
 
     public  String getDescription(){
-        return  description;
+        return description;
     }
 
     public int getImageResourcesId(){
-        return  imageResourcesId;
+        return imageResourcesId;
     }
 
     public String toString(){

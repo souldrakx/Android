@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StarBuzzV1">
         <activity
+            android:name=".StoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreCategoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".FoodActivity"
             android:exported="false" />
         <activity
