@@ -21,7 +21,6 @@ public class DrinkActivity extends AppCompatActivity {
         setContentView(R.layout.activity_drink);
 
         int drinkID = (Integer)getIntent().getExtras().get(EXTRA_DRINKID);
-        //Drink drink = Drink.drinks[drinkID];
 
         //Create cursor
         SQLiteOpenHelper starbuzzDatabaseHelper = new StarbuzzDatabaseHelper(this);
