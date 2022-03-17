@@ -32,11 +32,10 @@ public class DrinkActivity extends AppCompatActivity {
                     new String[]{Integer.toString(drinkID)},
                     null, null, null);
 
-            if (cursor.moveToFirst()){
+            if(cursor.moveToFirst()){
                 String nameText = cursor.getString(0);
                 String descriptionText = cursor.getString(1);
                 int photoId = cursor.getInt(2);
-
 
                 TextView name =(TextView)findViewById(R.id.name);
                 name.setText(nameText);
@@ -44,7 +43,7 @@ public class DrinkActivity extends AppCompatActivity {
                 TextView description = (TextView)findViewById(R.id.description);
                 description.setText(descriptionText);
 
-                ImageView photo = (ImageView) findViewById(R.id.photo);
+                ImageView photo = (ImageView)findViewById(R.id.photo);
                 photo.setImageResource(photoId);
                 photo.setContentDescription(nameText);
             }
@@ -55,6 +54,5 @@ public class DrinkActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
             toast.show();
         }
-
     }
 }
