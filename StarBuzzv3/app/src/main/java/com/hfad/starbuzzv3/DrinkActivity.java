@@ -66,22 +66,6 @@ public class DrinkActivity extends AppCompatActivity {
 
     public void onFavoriteClicked(View view){
         int drinkId = (Integer)getIntent().getExtras().get(EXTRA_DRINKID);
-/*
-        CheckBox favorite = (CheckBox) findViewById(R.id.favorite);
-        ContentValues drinkValues = new ContentValues();
-        drinkValues.put("FAVORITE", favorite.isChecked());
-
-        SQLiteOpenHelper starbuzzDatabaseHelper = new StarbuzzDatabaseHelper(this);
-        try {
-            SQLiteDatabase db = starbuzzDatabaseHelper.getWritableDatabase();
-            db.update("DRINK",
-                    drinkValues,
-                    "_id = ?",
-                    new String[]{Integer.toString(drinkId)});
-        }catch (SQLiteException e){
-            Toast toast =  Toast.makeText(this, "Database unavailable", Toast.LENGTH_SHORT);
-            toast.show();
-        }*/
         new UpdateDrinkTask().execute(drinkId);
     }
 
